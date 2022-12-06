@@ -654,9 +654,9 @@
             vid.src = "././FE/resources/" + randomVideo()
             vid.load()
 
-            //gapi.auth2.getAuthInstance().signIn();
-            //console.log(gapi.auth2.getAuthInstance().isSignedIn.get())
-            //updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get())
+            gapi.auth2.getAuthInstance().signIn();
+            console.log(gapi.auth2.getAuthInstance().isSignedIn.get())
+            updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get())
         }
         prayBtn.addEventListener("click", onPraySubmit)
 
@@ -665,7 +665,7 @@
           return "vid_0" + d.toString() + ".mp4"
         }
     </script>
-    <!--<script>
+    <script>
       const d = new Date();
       const shortDate = d.toISOString().slice(0, d.toISOString().indexOf("T"))
       const time = d.toISOString().slice(d.toISOString().indexOf("T") + 1, d.toISOString().length - 1)
@@ -673,7 +673,7 @@
       function makeApiCall() {
         var params = {
           // The ID of the spreadsheet to update.
-          spreadsheetId: '1U_CJf7I0okfzeivqBIJpNJsSNDVzv6X79pw2Zj7vgjI',  // TODO: Update placeholder value.
+          spreadsheetId: '1z3eXvjPs_w899rhDxj2mzudNaCVWWnTjMiFiMrWaKBc',  // TODO: Update placeholder value.
   
           // The A1 notation of a range to search for a logical table of data.
           // Values will be appended after the last row of the table.
@@ -707,9 +707,9 @@
       }
   
       function initClient() {
-        var API_KEY = 'AIzaSyDgWAl6XFEDHDdDON-GV2J69tItyOisIXA';  // TODO: Update placeholder with desired API key.
+        var API_KEY = 'AIzaSyDe0kCVdGP0ITE4HGXfXDWqSdyqAas8h54';  // TODO: Update placeholder with desired API key.
   
-        var CLIENT_ID = '442829298826-iqnvq5p46ko5kmcig77ds70p1c7vr4tr.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
+        var CLIENT_ID = '438043836688-46d77d1gvfk8dhvuht5f54hccfugmjii.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
   
         // TODO: Authorize using one of the following scopes:
         //   'https://www.googleapis.com/auth/drive'
@@ -749,7 +749,7 @@
       <script async defer src="https://apis.google.com/js/api.js"
         onload="this.onload=function(){};handleClientLoad()"
         onreadystatechange="if (this.readyState === 'complete') this.onload()">
-      </script> -->
+      </script>
 </body>
 
 </html>
