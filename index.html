@@ -657,9 +657,9 @@
             vid.src = "././FE/resources/" + randomVideo()
             vid.load()
 
-            gapi.auth2.getAuthInstance().signIn();
-            console.log(gapi.auth2.getAuthInstance().isSignedIn.get())
-            updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get())
+            // gapi.auth2.getAuthInstance().signIn();
+            // console.log(gapi.auth2.getAuthInstance().isSignedIn.get())
+            // updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get())
         }
         prayBtn.addEventListener("click", onPraySubmit)
 
